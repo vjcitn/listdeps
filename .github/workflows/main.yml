@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: test
       id: testROC  #Failed to download action 'https://api.github.com/repos/actions/vjcitn/tarball/master'. 
-      uses: listdeps/actions@master
+      uses: vjcitn/listdeps/actions@master
       with: 
         pkg-to-get-deps: 'ROC'
     - name: getlist
