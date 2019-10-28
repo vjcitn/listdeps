@@ -4,10 +4,14 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    name: test
     steps:
-    - uses: actions/listdeps@v1
-    - with: 
-      pkg-to-get-deps: 'ROC'
+    - name: test
+      id: testROC
+      uses: actions/listdeps@v1
+      with: 
+        pkg-to-get-deps: 'ROC'
+    - name: getlist
+      run: echo "got ${{ steps.testROC.deps }}"
+ 
