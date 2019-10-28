@@ -12,7 +12,7 @@ jobs:
     - uses: ./ # Uses an action in the root directory
     - name: test
       id: testROC  #Failed to download action 'https://api.github.com/repos/actions/vjcitn/tarball/master'. 
-      uses: vjcitn/listdeps/actions@master
+      uses: vjcitn/listdeps
       with: 
         pkg-to-get-deps: 'ROC'
     - name: getlist
