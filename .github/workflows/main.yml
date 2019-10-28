@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: test
       id: testROC
-      uses: actions/listdeps@v1
+      uses: actions/listdeps
       with: 
         pkg-to-get-deps: 'ROC'
     - name: getlist
