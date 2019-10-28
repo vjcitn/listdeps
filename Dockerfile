@@ -1,6 +1,6 @@
 
 # Container image that runs code to list dependencies of a given package
-FROM vjcitn/biocpt:v1
+FROM vjcitn/biocpt:v2
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
