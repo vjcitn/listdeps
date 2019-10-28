@@ -14,12 +14,11 @@ jobs:
       uses: vjcitn/listdeps@master
       with: 
         pkg-to-get-deps: 'ROC'
-        #
-        - name: getlist
+    - name: getlist
       run: echo "got ${{ steps.testROC.deps }}"
     - name: get deps json
         uses: actions/upload-artifact@v1
         with:
-          name: deps list
+          name: get_deps
           path: deps.json
  
