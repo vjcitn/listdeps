@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: test
       id: testROC
-      uses: actions/vjcitn/listdeps@master
+      uses: vjcitn/listdeps/actions@master
       with: 
         pkg-to-get-deps: 'ROC'
     - name: getlist
