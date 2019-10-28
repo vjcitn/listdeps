@@ -7,5 +7,5 @@ deps=`/usr/local/bin/Rscript -e "v=BiocManager::version(); library(BiocPkgTools)
 #cat(toJSON(list(biocvers=as.character(v), query='$1', deps=z[[1]])))
 
 #echo $deps
-echo ::set-output deps=$deps
+echo "::set-output name=deps::$deps"
 
