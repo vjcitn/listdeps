@@ -17,7 +17,8 @@ A JSON string providing information on the Bioconductor version in use,
 the query package, and the declared dependencies of that package
 
 ## Example usage
-
+```
 uses: actions/listdeps@v1
 with:
   pkg-to-get-deps: 'ROC'
+```
