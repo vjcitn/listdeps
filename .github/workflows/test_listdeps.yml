@@ -1,0 +1,13 @@
+name: listdeps
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/listdeps@v1
+    - with: 
+      pkg-to-get-deps: 'ROC'
