@@ -13,7 +13,7 @@ jobs:
       id: test_getdeps
       uses: vjcitn/listdeps@master
       with: 
-        pkg-to-get-deps: '%%P2G%%'
+        pkg-to-get-deps: 'ROC'
     - name: getjson
       uses: actions/upload-artifact@v1
       with:
