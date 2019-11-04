@@ -9,13 +9,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
-    - name: testROC
-      id: testROC  
+    - name: test_getdeps
+      id: test_getdeps
       uses: vjcitn/listdeps@master
       with: 
         pkg-to-get-deps: 'DESeq2'
-#    - name: getlist
-#      run: echo "got ${{ steps.testROC.deps }}"
     - name: getjson
       uses: actions/upload-artifact@v1
       with:
