@@ -1,6 +1,6 @@
 name: listdeps
 
-on:[pull_request]
+on: [pull_request]
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       id: test_getdeps
       uses: vjcitn/listdeps@master
       with: # PR SHOULD ADD VALUE BELOW
-        pkg-to-get-deps: 
+        pkg-to-get-deps: "Biobase"
     - name: getjson
       uses: actions/upload-artifact@v1
       with:
