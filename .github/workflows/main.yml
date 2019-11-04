@@ -13,7 +13,7 @@ jobs:
       id: test_getdeps
       uses: vjcitn/listdeps@master
       with: # PR SHOULD ADD VALUE BELOW
-        pkg-to-get-deps: 
+        pkg-to-get-deps: "DESeq2"
     - name: getjson
       uses: actions/upload-artifact@v1
       with:
