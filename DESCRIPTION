@@ -1,0 +1,15 @@
+Package: listdeps.gha
+Title: R package using github actions to determine dependencies of a given package.
+Description: Provide github actions to determine dependencies of a given package.
+Version: 0.0.0
+Author: Vince Carey
+Suggests: knitr
+Depends: git2r, BiocPkgTools
+Maintainer: VJ Carey <stvjc@channing.harvard.edu>
+License: Artistic-2.0
+LazyLoad: yes
+LazyData: yes
+biocViews: Infrastructure
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Encoding: UTF-8

@@ -13,7 +13,7 @@ jobs:
       id: test_getdeps
       uses: vjcitn/listdeps@master
       with: 
-        pkg-to-get-deps: 'DESeq2'
+        pkg-to-get-deps: '%%P2G%%'
     - name: getjson
       uses: actions/upload-artifact@v1
       with:
