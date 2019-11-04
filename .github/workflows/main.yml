@@ -1,6 +1,6 @@
 name: listdeps
 
-on: [push]
+on:[pull_request]
 
 jobs:
   build:
@@ -12,8 +12,8 @@ jobs:
     - name: test_getdeps
       id: test_getdeps
       uses: vjcitn/listdeps@master
-      with: 
-        pkg-to-get-deps: 'ROC'
+      with: # PR SHOULD ADD VALUE BELOW
+        pkg-to-get-deps: 
     - name: getjson
       uses: actions/upload-artifact@v1
       with:
