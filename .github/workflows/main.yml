@@ -5,7 +5,7 @@ on:[pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: testdocker
+    name: testdocker2
     steps:
     - name: Checkout
       uses: actions/checkout@v1
